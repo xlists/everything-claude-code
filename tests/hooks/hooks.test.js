@@ -2224,11 +2224,7 @@ async function runTests() {
         const normalizedMetadataRoot = normalizeComparablePath(metadata.root);
         const normalizedRepoDir = normalizeComparablePath(repoDir);
         assert.ok(normalizedMetadataRoot, 'project.json should include a non-empty repo root');
-        assert.strictEqual(
-          path.basename(normalizedMetadataRoot),
-          path.basename(normalizedRepoDir),
-          'project.json should include the repo root',
-        );
+        assert.strictEqual(normalizedMetadataRoot, normalizedRepoDir, 'project.json should include the repo root');
         assert.strictEqual(metadata.remote, 'https://github.com/example/ecc-test.git', 'project.json should include the sanitized remote');
         assert.ok(metadata.created_at, 'project.json should include created_at');
         assert.ok(metadata.last_seen, 'project.json should include last_seen');
