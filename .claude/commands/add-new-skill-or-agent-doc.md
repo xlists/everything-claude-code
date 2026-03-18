@@ -14,6 +14,7 @@ Adds documentation for a new skill or agent to the system.
 
 ## Common Files
 
+- `.claude/commands/add-new-skill-or-agent-doc.md`
 - `.claude/commands/add-new-skill-or-agent.md`
 
 ## Suggested Sequence
@@ -25,7 +26,7 @@ Adds documentation for a new skill or agent to the system.
 
 ## Typical Commit Signals
 
-- Create or update a markdown file in .claude/commands/ with instructions for adding a new skill or agent.
+- Create or update a markdown file under .claude/commands/ with the skill or agent documentation.
 
 ## Notes
 
