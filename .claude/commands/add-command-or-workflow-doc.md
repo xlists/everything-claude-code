@@ -14,7 +14,7 @@ Adds documentation for a new command or workflow to the system.
 
 ## Common Files
 
-- `.claude/commands/*.md`
+- `.claude/commands/add-command-or-workflow-doc.md`
 
 ## Suggested Sequence
 
@@ -25,7 +25,7 @@ Adds documentation for a new command or workflow to the system.
 
 ## Typical Commit Signals
 
-- Create a new markdown file in .claude/commands/ describing the command or workflow.
+- Create or update a markdown file in .claude/commands/ with the command or workflow documentation.
 
 ## Notes
 
