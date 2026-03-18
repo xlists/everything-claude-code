@@ -38,7 +38,7 @@ Follow these commit message conventions based on 8 analyzed commits.
 
 ### Message Guidelines
 
-- Average message length: ~84 characters
+- Average message length: ~85 characters
 - Keep first line concise and descriptive
 - Use imperative mood ("Add feature" not "Added feature")
 
@@ -201,7 +201,7 @@ feat: add everything-claude-code ECC bundle (.codex/AGENTS.md)
 
 ### Add Command Or Skill Or Agent Or Workflow
 
-Adds a new command, skill, agent, or workflow to the system by creating or updating the corresponding markdown file in .claude/commands.
+Adds a new command, skill, agent, or workflow to the system by creating or updating the corresponding markdown file in the .claude/commands directory.
 
 **Frequency**: ~3 times per month
 
@@ -218,7 +218,7 @@ Create or update .claude/commands/add-command-or-skill-or-agent-or-workflow.md
 
 ### Add Team Or Identity Or Research Config
 
-Adds or updates team, identity, or research configuration files for the project.
+Adds or updates team, identity, or research configuration by modifying the relevant files in .claude/team, .claude/identity.json, or .claude/research.
 
 **Frequency**: ~3 times per month
 
@@ -226,25 +226,42 @@ Adds or updates team, identity, or research configuration files for the project.
 1. Create or update .claude/team/everything-claude-code-team-config.json
 2. Create or update .claude/identity.json
 3. Create or update .claude/research/everything-claude-code-research-playbook.md
-4. Create or update .claude/commands/add-team-or-identity-or-research-config.md
 
 **Files typically involved**:
 - `.claude/team/everything-claude-code-team-config.json`
 - `.claude/identity.json`
 - `.claude/research/everything-claude-code-research-playbook.md`
-- `.claude/commands/add-team-or-identity-or-research-config.md`
 
 **Example commit sequence**:
 ```
 Create or update .claude/team/everything-claude-code-team-config.json
 Create or update .claude/identity.json
 Create or update .claude/research/everything-claude-code-research-playbook.md
-Create or update .claude/commands/add-team-or-identity-or-research-config.md
 ```
 
-### Add Skill Documentation
+### Add Guardrails Or Instincts
 
-Adds documentation for a new or existing skill in the appropriate SKILL.md file.
+Adds or updates guardrails or instincts for the system by modifying the relevant YAML or markdown files.
+
+**Frequency**: ~3 times per month
+
+**Steps**:
+1. Create or update .claude/rules/everything-claude-code-guardrails.md
+2. Create or update .claude/homunculus/instincts/inherited/everything-claude-code-instincts.yaml
+
+**Files typically involved**:
+- `.claude/rules/everything-claude-code-guardrails.md`
+- `.claude/homunculus/instincts/inherited/everything-claude-code-instincts.yaml`
+
+**Example commit sequence**:
+```
+Create or update .claude/rules/everything-claude-code-guardrails.md
+Create or update .claude/homunculus/instincts/inherited/everything-claude-code-instincts.yaml
+```
+
+### Add Or Update Skill Documentation
+
+Adds or updates skill documentation for the everything-claude-code agent by modifying SKILL.md files.
 
 **Frequency**: ~2 times per month
 
@@ -260,48 +277,6 @@ Adds documentation for a new or existing skill in the appropriate SKILL.md file.
 ```
 Create or update .agents/skills/everything-claude-code/SKILL.md
 Create or update .claude/skills/everything-claude-code/SKILL.md
-```
-
-### Add Guardrails Or Controls
-
-Adds or updates project guardrails or enterprise controls documentation.
-
-**Frequency**: ~2 times per month
-
-**Steps**:
-1. Create or update .claude/rules/everything-claude-code-guardrails.md
-2. Create or update .claude/enterprise/controls.md
-
-**Files typically involved**:
-- `.claude/rules/everything-claude-code-guardrails.md`
-- `.claude/enterprise/controls.md`
-
-**Example commit sequence**:
-```
-Create or update .claude/rules/everything-claude-code-guardrails.md
-Create or update .claude/enterprise/controls.md
-```
-
-### Add Codex Agent
-
-Adds or updates agent configuration files in the .codex/agents directory and updates AGENTS.md.
-
-**Frequency**: ~2 times per month
-
-**Steps**:
-1. Create or update .codex/agents/*.toml
-2. Create or update .codex/AGENTS.md
-
-**Files typically involved**:
-- `.codex/agents/docs-researcher.toml`
-- `.codex/agents/reviewer.toml`
-- `.codex/agents/explorer.toml`
-- `.codex/AGENTS.md`
-
-**Example commit sequence**:
-```
-Create or update .codex/agents/*.toml
-Create or update .codex/AGENTS.md
 ```
 
 
